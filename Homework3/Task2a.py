@@ -5,5 +5,3 @@
 digits = input("Please enter a three-digit number: ")
 
 print(int(digits[0]) + int(digits[1]) + int(digits[2]))
-
-print(ord(digits[0]))
