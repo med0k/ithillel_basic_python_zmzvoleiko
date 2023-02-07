@@ -12,4 +12,4 @@ merger = entered_value.split('*')
 print(merger)
 
 print("Name: ", merger[0])
-print("Age: ", int(merger[2][:4]) - int(merger[1][:4]))
+print("Age: ", int(merger[2][:4]) - int(merger[1][:4]), "years")
