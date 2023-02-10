@@ -6,7 +6,7 @@
 
 def triangle_square_and_perimeter(a, b):  # returns 2 values
     pass
-
+#S = 1/2 (a × b), где a и b — катеты
 
 
 
