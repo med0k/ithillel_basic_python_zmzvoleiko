@@ -3,13 +3,17 @@
 та периметр цього трикутника. Функція має повертати пару значень.
 """
 
+import math
 
-def triangle_square_and_perimeter(a, b):  # returns 2 values
-    pass
-#S = 1/2 (a × b), где a и b — катеты
+def triangle_square_and_perimeter(a, b):
+    plosha = 0.5*(a*b)
+    perim = (math.sqrt((a**2)+(b**2)))+a+b
+    return plosha, perim
 
+a = int(input("Enter katet 1(a): "))
+b = int(input("Enter katet 2(b): "))
 
+final = triangle_square_and_perimeter(a,b)
 
-a = int(input("Enter katet 1: "))
-
+print("Plosha: ", int(final[0]), "\nPerimeter: ", int(final[1]))
 

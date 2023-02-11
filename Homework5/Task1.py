@@ -13,17 +13,14 @@
 """
 
 import math
-def degrees2radians(degrees):  # returns float: radians value
-    radians = (degrees * math.pi)/180
+def degrees2radians(degrees):
+    radians = (degrees*math.pi)/180
     return radians
 
 degrees = int(input('Please enter degrees: \n'))
 
-# result = degrees2radians(degrees)
-# print(result, type(result))
-
-cos60 = math.cos(degrees2radians(degrees))
-print(cos60)
+cosi = math.cos(degrees2radians(degrees))
+print("Value of cosinuses by enteren your degrees: ", round(cosi,2))
 
 
 
