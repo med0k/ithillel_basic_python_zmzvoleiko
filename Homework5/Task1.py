@@ -12,17 +12,17 @@
  Використовуючи цю функцію, вивести на екран значення косинусів кутів 60, 45 та 40 градусів.
 """
 
-import math
+from math import cos, pi
 def degrees2radians(degrees):
-    radians = (degrees * math.pi) / 180
+    radians = (degrees * pi) / 180
     return radians
 
 
 degrees = int(input('Please enter degrees: \n'))
 
-cosi = math.cos(degrees2radians(degrees))
+cosi = cos(degrees2radians(degrees))
 
-print("Value of cosinuses by enteren your degrees: ", round(cosi, 2))
+print("Value of cosinuses by entered your degrees: ", round(cosi, 2))
 
 
 

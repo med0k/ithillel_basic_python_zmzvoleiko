@@ -11,10 +11,10 @@ def triangle_square_and_perimeter(a, b):
     return plosha, perim
 
 
-a = int(input("Enter katet 1(a): "))
-b = int(input("Enter katet 2(b): "))
+x = int(input("Enter katet 1(a): "))
+y = int(input("Enter katet 2(b): "))
 
-final = triangle_square_and_perimeter(a,b)
+final = triangle_square_and_perimeter(x, y)
 
 print("Plosha: ", int(final[0]), "\nPerimeter: ", int(final[1]))
 
