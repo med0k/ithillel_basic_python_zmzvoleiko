@@ -13,14 +13,16 @@
 """
 
 from math import cos, pi
+
+
 def degrees2radians(degrees):
     radians = (degrees * pi) / 180
     return radians
 
 
-degrees = int(input('Please enter degrees: \n'))
+valu = int(input('Please enter degrees: \n'))
 
-cosi = cos(degrees2radians(degrees))
+cosi = cos(degrees2radians(valu))
 
 print("Value of cosinuses by entered your degrees: ", round(cosi, 2))
 

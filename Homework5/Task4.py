@@ -4,9 +4,12 @@
 Функція повинна називатися my_sum. Для розрахунку суми використайте вбудовану функцію sum.
 """
 
-def my_sum(*sumik, start = 0):
+
+def my_sum(*sumik, start=0):
     sum_result = sum(sumik, start)
     return sum_result
 
-result = my_sum(3,5,5)
+
+result = my_sum(3, 5, 5)
+
 print("Summ of nums: ", result)

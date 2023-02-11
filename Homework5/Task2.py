@@ -5,6 +5,7 @@
 
 import math
 
+
 def triangle_square_and_perimeter(a, b):
     plosha = 0.5 * (a * b)
     perim = (math.sqrt((a ** 2)+(b ** 2))) + a + b
