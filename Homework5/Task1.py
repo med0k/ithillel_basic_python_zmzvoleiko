@@ -16,7 +16,7 @@ from math import cos, pi
 
 
 def degrees2radians(degrees):
-    radians = (degrees * pi) / 180
+    radians = (degrees*pi) / 180
     return radians
 
 
