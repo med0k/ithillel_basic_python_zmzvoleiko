@@ -6,8 +6,8 @@ import math
 
 
 def cone_square_and_volume(radius, height):  # returns 2 floats
-    plosha = (math.pi*(radius**2)) + (math.pi*radius*(math.sqrt((radius**2) + (height**2))))
-    volume = (math.pi*(radius**2)*height)/3
+    plosha = math.pi * radius**2 + math.pi * radius * math.sqrt(radius**2 + height**2)
+    volume = math.pi * radius**2 * height / 3
     return plosha, volume
 
 
