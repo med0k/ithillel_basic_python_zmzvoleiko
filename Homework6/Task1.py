@@ -5,15 +5,15 @@
 
 def is_even(number):  # returns boolean value
     if (number % 2) == 0:
-        print(bool(True))
+        print("Ne parne ", bool(True))
     else:
-        print(bool(False))
+        print("Ne parne ", bool(False))
+
 
 
 def test():
-    result = is_even(2)
-    print("Result", result)
-    assert result == (result % 2)
+    result = is_even(3)
+    assert result == (result%2)
 
 
 def main():
@@ -22,5 +22,5 @@ def main():
 
 
 if __name__ == '__main__':
-    # main()
-    test()
+    main()
+    # test()
