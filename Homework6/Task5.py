@@ -8,9 +8,9 @@
 
 def count_year(your_year):
     if your_year % 4 ==0 and your_year % 100 != 0 or your_year % 400 == 0:
-        print("YES, ", True)
+        print("YES")
     else:
-        print("NO, ", False)
+        print("NO")
 
 
 def test():
