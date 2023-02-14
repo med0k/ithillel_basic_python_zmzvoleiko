@@ -7,18 +7,18 @@ sign(x) = 0 якщо x = 0.
 
 def sign(x):
     if x > 0:
-        fin = 1
-        print(fin)
+        print("Result is 1")
+        return 1
     elif x < 0:
-        fin = -1
-        print(fin)
+        print("Result is -1")
+        return -1
     else:
-        fin = 0
-        print(fin)
+        print("Result is 0")
+        return 0
 
 
 def test():
-    assert sign(50) is None
+    assert sign(50) > 0
 
 
 def main():
