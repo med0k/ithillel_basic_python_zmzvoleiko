@@ -9,13 +9,15 @@
 def count_year(your_year):
     if your_year % 4 ==0 and your_year % 100 != 0 or your_year % 400 == 0:
         print("YES")
+        return True
     else:
         print("NO")
+        return False
 
 
 def test():
-    assert count_year(1996) is None
-
+    assert count_year(2017) is False
+    assert count_year(1996) is True
 
 def main():
     enter_year = int(input("Enter your year: "))
@@ -27,4 +29,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    test()
+    # test()

@@ -24,6 +24,9 @@ def circles_intersect(x1, y1, r1, x2, y2, r2): # returns boolean value
         return False
 
 
+def test():
+
+
 def main():
     r1 = int(input("Enter radius1: "))
     x1 = int(input("Please enter coordinate x1: "))
