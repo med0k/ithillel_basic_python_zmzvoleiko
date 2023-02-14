@@ -17,11 +17,16 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
+def test():
+    assert fibonacci(5) == 5
+
+
 def main():
-    prev_fibonacci = fibonacci(10 - 1)
+    prev_fibonacci = fibonacci(5 - 1)
 
     print(prev_fibonacci)
 
 
 if __name__ == '__main__':
     main()
+    # test()
