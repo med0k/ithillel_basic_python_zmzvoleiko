@@ -5,20 +5,22 @@
 
 def is_even(number):  # returns boolean value
     if (number % 2) == 0:
-        print("Ne parne ", bool(True))
+        print("Your digit is parne")
+        return True
     else:
-        print("Ne parne ", bool(False))
-
-
+        print("Your digit is Neparne")
+        return False
 
 def test():
-    result = is_even(3)
-    assert result == (result%2)
+    result1 = is_even(3)
+    result2 = is_even(4)
+    assert result1 is False
+    assert result2 is True
 
 
 def main():
     entered_value = int(input("Введіть ваше число і дізнаємося чи є ваше число парним: "))
-    is_even(entered_value)
+    print("Your entered value is: ", is_even(entered_value))
 
 
 if __name__ == '__main__':
