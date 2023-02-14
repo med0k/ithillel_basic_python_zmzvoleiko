@@ -10,14 +10,18 @@
 """
 
 
-import math
-
-
 def fibonacci(n):
-    if n in (1, 2):
-        return 1
+    if n <= 1:
+        return n
     else:
-        return fibonacci(n - 1)
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-print(fibonacci(5))
+def main():
+    prev_fibonacci = fibonacci(10 - 1)
+
+    print(prev_fibonacci)
+
+
+if __name__ == '__main__':
+    main()
