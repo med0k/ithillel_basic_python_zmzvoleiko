@@ -20,7 +20,7 @@ def test():
 
 def main():
     entered_value = int(input("Введіть ваше число і дізнаємося чи є ваше число парним: "))
-    print("Your entered value is: ", is_even(entered_value))
+    is_even(entered_value)
 
 
 if __name__ == '__main__':
