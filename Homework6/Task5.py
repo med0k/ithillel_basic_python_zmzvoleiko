@@ -7,12 +7,10 @@
 
 
 def count_year(your_year):
-    if your_year % 4 ==0 and your_year % 100 != 0 or your_year % 400 == 0:
-        print("YES")
-        return True
+    if your_year % 4 == 0 and your_year % 100 != 0 or your_year % 400 == 0:
+        return your_year % 4 == 0 and your_year % 100 != 0 or your_year % 400 == 0
     else:
-        print("NO")
-        return False
+        return None
 
 
 def test():
@@ -24,7 +22,11 @@ def main():
 
     result = count_year(enter_year)
 
-    print(result)
+    if result is True:
+        print("yes")
+
+    else:
+        print("False")
 
 
 if __name__ == '__main__':

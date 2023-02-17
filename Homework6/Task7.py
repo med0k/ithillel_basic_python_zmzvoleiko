@@ -22,9 +22,10 @@ def test():
 
 
 def main():
-    prev_fibonacci = fibonacci(5 - 1)
+    entered_value = int(input("Please enter your value: "))
+    previous_fibonacci = fibonacci(entered_value - 1)
 
-    print(prev_fibonacci)
+    print(previous_fibonacci)
 
 
 if __name__ == '__main__':

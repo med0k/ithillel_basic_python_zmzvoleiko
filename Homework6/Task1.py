@@ -4,12 +4,11 @@
 
 
 def is_even(number):  # returns boolean value
-    if (number % 2) == 0:
-        print("Your digit is parne")
-        return True
+    if number % 2 == 0:
+        return number % 2
     else:
-        print("Your digit is Neparne")
-        return False
+        return None
+
 
 def test():
     result1 = is_even(3)
@@ -19,8 +18,15 @@ def test():
 
 
 def main():
-    entered_value = int(input("Введіть ваше число і дізнаємося чи є ваше число парним: "))
-    is_even(entered_value)
+    entered_value = int(input("Введіть ваше число: "))
+
+    result = is_even(entered_value)
+
+    if result is True:
+        print("Your number is PARNE")
+
+    else:
+        print("Result is NE PARNE")
 
 
 if __name__ == '__main__':

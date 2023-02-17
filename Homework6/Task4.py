@@ -4,27 +4,19 @@
 Кожне коло задається координатами центра та радіусом.
 """
 
-
 import math
 
 
-def circles_intersect(x1, y1, r1, x2, y2, r2): # returns boolean value
+def circles_intersect(x1, y1, r1, x2, y2, r2):  # returns boolean value
     d = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
-    if d < r1-r2:
-        print("Circle2 in Circle1")
-        return True
-    elif d < r2-r1:
-        print("Circle 1 in Circle 2")
-        return True
-    elif d > r1+r2:
-        print("Circle1  and Circle2 intersect")
-        return True
+    if d < r1 - r2:
+        return d < r1 - r2
+    elif d < r2 - r1:
+        return d < r2 - r1
+    elif d > r1 + r2:
+        return d > r1 + r2
     else:
-        print("Do not overlap")
-        return False
-
-
-def test():
+        return None
 
 
 def main():

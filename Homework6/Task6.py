@@ -7,14 +7,14 @@ sign(x) = 0 якщо x = 0.
 
 def sign(x):
     if x > 0:
-        print("Result is 1")
-        return 1
+        opg = 1
+        return opg
     elif x < 0:
-        print("Result is -1")
-        return -1
+        opg = -1
+        return opg
     else:
-        print("Result is 0")
-        return 0
+        opg = 0
+        return opg
 
 
 def test():
@@ -24,7 +24,16 @@ def test():
 def main():
     entered_value = int(input("Please enter your digit: "))
 
-    print(sign(entered_value))
+    result = sign(entered_value)
+
+    if result == 1:
+        print("This value equal -> 1")
+
+    elif result == -1:
+        print("This value equal -> 1")
+
+    else:
+        print("This value equal -> 0")
 
 
 if __name__ == '__main__':
