@@ -4,17 +4,12 @@
 
 
 def is_even(number):  # returns boolean value
-    if number % 2 == 0:
-        return number % 2
-    else:
-        return None
+    return number % 2 == 0
 
 
 def test():
-    result1 = is_even(3)
-    result2 = is_even(4)
-    assert result1 is False
-    assert result2 is True
+    assert is_even(3) is False
+    assert is_even(4) is True
 
 
 def main():

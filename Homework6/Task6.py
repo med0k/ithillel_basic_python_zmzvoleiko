@@ -7,14 +7,11 @@ sign(x) = 0 якщо x = 0.
 
 def sign(x):
     if x > 0:
-        opg = 1
-        return opg
+        return 1
     elif x < 0:
-        opg = -1
-        return opg
+        return -1
     else:
-        opg = 0
-        return opg
+        return 0
 
 
 def test():
@@ -30,7 +27,7 @@ def main():
         print("This value equal -> 1")
 
     elif result == -1:
-        print("This value equal -> 1")
+        print("This value equal -> -1")
 
     else:
         print("This value equal -> 0")
