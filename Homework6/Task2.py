@@ -6,7 +6,7 @@ import math
 
 
 def solve_quadratic_equation(a, b, c):
-    discriminant = b ** 2 - 4 * a * c
+    discriminant = b**2 - 4 * a * c
     my_sqrt = math.sqrt(abs(discriminant))
     if discriminant > 0:
         x1 = (-b + my_sqrt) / (2 * a)

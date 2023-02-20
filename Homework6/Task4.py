@@ -9,17 +9,7 @@ import math
 
 def circles_intersect(x1, y1, r1, x2, y2, r2):  # returns boolean value
     d = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
-    if d < r1 - r2:
-        return d < r1 - r2
-
-    elif d < r2 - r1:
-        return d < r2 - r1
-
-    elif d > r1 + r2:
-        return d > r1 + r2
-
-    else:
-        return None
+    return d < r1 - r2 or d < r2 - r1 or d > r1 + r2
 
 
 def main():
