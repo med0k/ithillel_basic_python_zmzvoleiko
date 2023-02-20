@@ -9,16 +9,12 @@
 """
 
 
-def calc(kletkaporkilos):
-    while
-
-
 def main():
     weight_on_kilo = 35 / 1000000 # вага однієї зернинки, в кг
     total_grains = 0
     nomer_kletki = 1
 
-    N = float(input("Введіть вагу зерна, що повинні були б передати раджі, в кг: "))
+    N = float(input("Enter weight that you have to return to Redgi in kg: "))
 
     while total_grains < N:
         grains_on_kletke = 2**(nomer_kletki - 1)
