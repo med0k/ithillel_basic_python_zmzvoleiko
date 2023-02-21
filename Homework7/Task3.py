@@ -10,18 +10,24 @@
 
 
 def main():
-    weight_on_kilo = 35 / 1000000  # вага однієї зернинки, в кг
-    total_grains = 0
-    nomer_kletki = 1
+    n = float(input("Enter weight that you have to return to Redgi in kg: "))
+    total_grains = int(n * 1000000 // 0.035)
+    grains_on_current_square = 1
+    grains_on_board = 0
+    current_square = 1
 
-    N = float(input("Enter weight that you have to return to Redgi in kg: "))
+    while grains_on_board < total_grains:
+        grains_on_board += grains_on_current_square
+        if grains_on_board >= total_grains:
+            break
+        grains_on_current_square *= 2
+        current_square += 1
 
-    while total_grains < N:
-        grains_on_kletke = 2 ** (nomer_kletki - 1)
-        total_grains += grains_on_kletke
+    stroka = (current_square - 1) // 8 + 1
+    column = chr((current_square - 1) % 8 + ord('a'))
 
+    print(f"Redgi have to return {grains_on_board / 1000000:.2f} kg seeds on square {column}{stroka}")
 
-total_weight = total_grains * weight_on_kilo
 
 if __name__ == '__main__':
     main()
