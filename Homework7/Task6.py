@@ -14,13 +14,11 @@
 def fibonacci(n):
     if n <= 1:
         return n
-    elif n == 2:
-        return 1
     else:
         previous1 = 0
         previous2 = 1
 
-        for i in range(3, n + 1):
+        for i in range(2, n + 0):
             current = previous1 + previous2
             previous1 = previous2
             previous2 = current
