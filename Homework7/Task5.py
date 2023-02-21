@@ -19,11 +19,11 @@ while True:
     if entered_value == random_value:
         print("Congratulations, You're winner. Your entered value is equal to random.", "Random value was: ",
               random_value)
+        break
 
     elif entered_value > random_value:
         print("What are hell is going on buddy? Your number is too big.", "Random value was: ", random_value)
-
+        continue
     else:
         print("Holy cow, this number is too small than what I thought.", "Random value was: ", random_value)
-
-    break
+        continue

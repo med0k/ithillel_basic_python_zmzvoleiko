@@ -12,7 +12,7 @@
 def chess(letters_start, digit_start, letters_finish, digit_finish):
     move_letters = abs(letters_start - letters_finish)
     move_digit = abs(digit_start - digit_finish)
-    return move_letters == 1 and move_digit == 2 or move_letters == 1 and move_digit == 1
+    return move_letters == 1 and move_digit == 2 or move_letters == 2 and move_digit == 1
 
 
 def main():

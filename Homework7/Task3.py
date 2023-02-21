@@ -10,15 +10,16 @@
 
 
 def main():
-    weight_on_kilo = 35 / 1000000 # вага однієї зернинки, в кг
+    weight_on_kilo = 35 / 1000000  # вага однієї зернинки, в кг
     total_grains = 0
     nomer_kletki = 1
 
     N = float(input("Enter weight that you have to return to Redgi in kg: "))
 
     while total_grains < N:
-        grains_on_kletke = 2**(nomer_kletki - 1)
+        grains_on_kletke = 2 ** (nomer_kletki - 1)
         total_grains += grains_on_kletke
+
 
 total_weight = total_grains * weight_on_kilo
 
