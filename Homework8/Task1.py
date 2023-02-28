@@ -9,7 +9,7 @@ def index(lst, elem):  # returns integer or None
 
 
 def index(lst, elem):  # returns integer or None
-    for num in range(0, len(lst)):
+    for num in range(len(lst)):
         if lst[num] == elem:
             return num
     return None
