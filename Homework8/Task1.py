@@ -8,7 +8,7 @@ def index(lst, elem):  # returns integer or None
 """
 
 
-def index(lst, elem):  # returns integer or None
+def index(lst, elem):
     for num in range(len(lst)):
         if lst[num] == elem:
             return num
@@ -16,8 +16,9 @@ def index(lst, elem):  # returns integer or None
 
 
 def main():
-    my_list = [5, 6, '30', '40', 'kek', 60, 56, 11, 23]
-    print(index(my_list, 23))
+    my_list = ['Max', 6, 'Petya', '40', 'kek', 60, 56, 11, 23]
+    print(index(my_list, 'kek'))
+    print(index(my_list, 'Vasya'))
 
 
 if __name__ == '__main__':
