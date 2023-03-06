@@ -18,7 +18,7 @@ def fibonacci(n):
         previous1 = 0
         previous2 = 1
 
-        for i in range(2, n + 0):
+        for i in range(2, n + 1):
             current = previous1 + previous2
             previous1 = previous2
             previous2 = current

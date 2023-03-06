@@ -9,24 +9,26 @@
 """
 
 
-def main():
-    n = float(input("Enter weight that you have to return to Redgi in kg: "))
-    total_grains = int(n * 1000000 // 0.035)
+def calculate_position(kgs):
+    seeds_input = float(input("Enter count kg that you have to return to Redgi: "))
+    seeds_count = int(seeds_input / kgs * 1000000)
+    current_square = 1
     grains_on_current_square = 1
     grains_on_board = 0
-    current_square = 1
-
-    while grains_on_board < total_grains:
+    while grains_on_board < seeds_count:
         grains_on_board += grains_on_current_square
-        if grains_on_board >= total_grains:
+        if grains_on_board >= seeds_count:
             break
         grains_on_current_square *= 2
         current_square += 1
+    col = (current_square - 1) // 8 + 1
+    row = chr((current_square - 1) % 8 + ord('a'))
+    return col, row
 
-    stroka = (current_square - 1) // 8 + 1
-    column = chr((current_square - 1) % 8 + ord('a'))
 
-    print(f"Redgi have to return {grains_on_board / 1000000:.2f} kg seeds on square {column}{stroka}")
+def main():
+    kgs = 0.03584
+    print(calculate_position(kgs))
 
 
 if __name__ == '__main__':
