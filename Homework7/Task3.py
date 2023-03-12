@@ -9,9 +9,8 @@
 """
 
 
-def calculate_position(kgs):
-    seeds_input = float(input("Enter count kg that you have to return to Redgi: "))
-    seeds_count = int(seeds_input / kgs * 1000000)
+def calculate_position(kgs, seeds_input) -> str:
+    seeds_count = int(seeds_input / kgs)
     current_square = 1
     grains_on_current_square = 1
     grains_on_board = 0
@@ -23,12 +22,14 @@ def calculate_position(kgs):
         current_square += 1
     col = (current_square - 1) // 8 + 1
     row = chr((current_square - 1) % 8 + ord('a'))
-    return col, row
+    return f"{col}, {row}"
 
 
 def main():
-    kgs = 0.03584
-    print(calculate_position(kgs))
+    kgs = 0.000035
+    seeds_input = float(input("Enter count kg that you have to return to Redgi: "))
+    print(calculate_position(kgs, seeds_input))
+    print(type(calculate_position(kgs, seeds_input)))
 
 
 if __name__ == '__main__':
