@@ -23,7 +23,8 @@ def main():
     lst = [5, "9", 0, "452", 6.5, "6", 1, 2]
     lst2 = [472, 326, 1, 999.0, "1101000", "99", 9, "20", 863, "0"]
 
-    sorted_lst = sorted(lst, key=lambda x: float(x) if isinstance(x, str) and x.isdigit() else x)
+    # sorted_lst = sorted(lst, key=lambda x: float(x) if isinstance(x, str) and x.isdigit() else x)
+    sorted_lst = sorted(lst, key=float)
     print(sorted_lst)
 
     sorted_lst2 = sorted(lst2, key=lambda x: str(x)[0])
