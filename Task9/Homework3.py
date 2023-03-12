@@ -1,4 +1,7 @@
-def copydeep(obj):
+from typing import Union
+
+
+def copydeep(obj: Union[str, int, float, bool, list, tuple, dict]):
     if isinstance(obj, (int, float, str, bool)):
         return obj
     elif isinstance(obj, list):
@@ -10,11 +13,12 @@ def copydeep(obj):
         new_tuple = ()
         for elem in obj:
             new_tuple += (copydeep(elem))
-        return new_tuple
+        return tuple(new_tuple)
     elif isinstance(obj, dict):
         new_dict = {}
         for key, value in obj.items():
-            new_dict[key] = copydeep(value)
+            new_key = copydeep(key)
+            new_dict[new_key] = copydeep(value)
         return new_dict
     else:
         return None
