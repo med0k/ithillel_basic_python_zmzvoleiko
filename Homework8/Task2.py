@@ -27,7 +27,7 @@ def copydeep(obj):
     elif isinstance(obj, tuple):
         new_tuple = ()
         for elem in obj:
-            new_tuple.append(copydeep(elem))
+            new_tuple += (copydeep(elem))
         return new_tuple
     else:
         return None

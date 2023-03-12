@@ -5,21 +5,19 @@ def gen_primes():  # returns list of ints
 """
 
 
-def my_numbers():
-    numbers = []
-    for i in range(1, 101):
-        is_numbers = True
-        for measure in range(2, int(i ** 0.5) + 1):
-            if i % measure == 0:
-                is_numbers = False
+def gen_primes() -> list:
+    prime_numbers = []
+    for numbers in range(2, 101):
+        for i in prime_numbers:
+            if not numbers % i:
                 break
-        if is_numbers:
-            numbers.append(i)
-    return numbers
+        else:
+            prime_numbers.append(numbers)
+    return prime_numbers
 
 
 def main():
-    print(my_numbers())
+    print(f"Prime numbers from 1 to 100: {gen_primes()}")
 
 
 if __name__ == "__main__":
